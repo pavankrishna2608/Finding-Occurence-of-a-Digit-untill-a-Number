@@ -1,0 +1,12 @@
+import math
+
+def c(n,d):
+    count=0
+    for i in range(0,n):
+        if (i%10)==d:
+            count+=1
+        # this step is while you dealing upto 2 digit numbers but demoninator should change as per the input
+        if ((math.floor(i/10))==d):
+            count+=1
+    return count
+print(c(99,3))
